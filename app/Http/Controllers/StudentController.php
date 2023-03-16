@@ -8,6 +8,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-        # code...
+        $nama = "budi";
+        return view('student', ['nama'=> $nama]);
     }
 }

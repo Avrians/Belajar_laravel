@@ -21,4 +21,4 @@ Route::get('/', function () {
         'buah' => ['pisang', 'apel', 'jeruk', 'semangka', 'kiwi']
       ]);
 });
-Route::get('/students', [StudentController::class,  'index ']) ; 
+Route::get('/students', [StudentController::class,  'index']);  
