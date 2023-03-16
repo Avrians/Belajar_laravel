@@ -35,7 +35,6 @@
 
 <div class="container">
     @yield('content')
-    <h1>Coba-coba</h1>
 </div>
 
     <!-- Javascript -->
