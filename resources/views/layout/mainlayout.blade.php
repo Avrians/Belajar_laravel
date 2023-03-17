@@ -35,6 +35,7 @@
 
 <div class="container">
     @yield('content')
+    <p> coba ngpull data github </p>
 </div>
 
     <!-- Javascript -->
