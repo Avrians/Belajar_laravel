@@ -9,5 +9,5 @@ class ClassRoom extends Model
 {
     use HasFactory;
 
-    protected $table = 'class';
+    protected $table = 'class';  
 }
