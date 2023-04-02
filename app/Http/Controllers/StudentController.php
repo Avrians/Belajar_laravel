@@ -74,8 +74,15 @@ class StudentController extends Controller
         // collection
         // 1. hitung rata-rata nilai
 
-        $nilaiRata2 = collect($nilai)->avg();
-        dd($nilaiRata2); 
+        // $nilaiRata2 = collect($nilai)->avg();
+        // dd($nilaiRata2); 
 
+
+        // contains = cek apakah sebuah array memiliki sesuatu
+        $aaa = collect($nilai)->contains(function($angka){
+            return $angka < 6;
+        });
+
+        dd($aaa);
     }
 }
