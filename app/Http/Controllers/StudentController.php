@@ -56,8 +56,26 @@ class StudentController extends Controller
         //     'class_id' => 1
         // ]);
 
-        Student::find(27)->delete();
+        // Student::find(27)->delete();
+        
+        $nilai = [9,8,7,6,5,4,3,2,1,3,5,7,8,9];
+        
+        // php biasa
+        // 1. hitung jumlah nilai
+        // 2. hitung berapa banyak nilai
+        // 3. hitung nilai rata-rata = total nilai / count nilai
 
+        // $countNilai = count($nilai);
+        // $totalNilai = array_sum($nilai);
+        // $nilaiRata = $totalNilai / $countNilai;
+        // dd($nilaiRata);
+
+
+        // collection
+        // 1. hitung rata-rata nilai
+
+        $nilaiRata2 = collect($nilai)->avg();
+        dd($nilaiRata2); 
 
     }
 }
